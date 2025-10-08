@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Anthropic-Inspired Light Theme - Warm, minimal, and clean */
+    --background: 32 22% 96%; /* #F5F2ED - Warm cream background */
+    --foreground: 24 33% 15%; /* #2D221B - Rich dark brown for text */
+
+    --card: 30 25% 99%; /* #FCFAF8 - Soft off-white for cards */
+    --card-foreground: 24 33% 15%;
+
+    --popover: 30 25% 99%;
+    --popover-foreground: 24 33% 15%;
+
+    --primary: 20 65% 55%; /* #CC7852 - Warm terracotta/orange (Anthropic brand) */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 15% 80%; /* #D4CEC4 - Warm gray */
+    --secondary-foreground: 24 33% 15%;
+
+    --muted: 30 20% 94%; /* #F0EBE5 - Subtle warm background */
+    --muted-foreground: 24 20% 40%; /* #806B5D - Warm brown muted text */
+
+    --accent: 38 85% 50%; /* #E6901F - Warm amber accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%; /* #D93025 - Warm red for destructive */
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 65% 45%; /* #20A264 - Warm green */
+    --success-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%; /* #E0D8CF - Warm subtle border */
+    --input: 30 15% 92%; /* #EAE4DB */
+    --ring: 20 65% 55%; /* Terracotta ring */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Anthropic-Inspired Dark Theme - Warm dark tones */
+    --background: 24 25% 12%; /* #1C1511 - Warm very dark brown */
+    --foreground: 30 25% 95%; /* #F3EFE9 - Warm off-white */
+
+    --card: 24 22% 16%; /* #262018 - Warm dark card */
+    --card-foreground: 30 25% 95%;
+
+    --popover: 24 22% 16%;
+    --popover-foreground: 30 25% 95%;
+
+    --primary: 20 70% 60%; /* #D98766 - Lighter terracotta for dark mode */
+    --primary-foreground: 24 25% 12%;
+
+    --secondary: 24 15% 25%; /* #3D332C - Warm dark gray */
+    --secondary-foreground: 30 25% 95%;
+
+    --muted: 24 15% 22%; /* #352C25 - Warm muted background */
+    --muted-foreground: 30 15% 65%; /* #A8998C - Warm muted text */
+
+    --accent: 38 80% 55%; /* #E89B34 - Warm amber */
+    --accent-foreground: 24 25% 12%;
+
+    --destructive: 0 70% 55%; /* #E6564A - Warm red */
+    --destructive-foreground: 30 25% 95%;
+
+    --success: 142 60% 50%; /* #33B679 - Warm green */
+    --success-foreground: 30 25% 95%;
+
+    --border: 24 15% 28%; /* #433830 - Warm border */
+    --input: 24 15% 25%;
+    --ring: 20 70% 60%; /* Terracotta ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar while maintaining functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
+  /* Custom scrollbar styling for better visual hierarchy */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground)) hsl(var(--background));
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 4px;
+    border: 2px solid hsl(var(--background));
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+}
