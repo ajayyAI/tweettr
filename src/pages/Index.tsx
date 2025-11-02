@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Zap, Loader2, Sparkles, Settings, History } from 'lucide-react';
+import { Zap, Loader2, Sparkles, Settings, History, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
@@ -328,8 +328,9 @@ const Index = () => {
               href="https://github.com/ajayyai/tweettr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 transition-colors"
+              className="text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1"
             >
+              <Github className="h-4 w-4" />
               View on GitHub
             </a>
           </div>

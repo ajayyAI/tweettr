@@ -37,7 +37,7 @@ A minimal, privacy-first viral tweet generator powered by AI using the Vercel AI
 
 ## AI Integration
 
-Catalyst uses the **Vercel AI SDK** exclusively for all LLM calls. This provides:
+Tweettr uses the **Vercel AI SDK** exclusively for all LLM calls. This provides:
 - Unified interface across multiple providers
 - Built-in streaming support
 - Type-safe API
@@ -136,7 +136,7 @@ bun run preview
 
 ## Privacy
 
-Catalyst is privacy-first:
+Tweettr is privacy-first:
 - No analytics or tracking
 - No server-side data collection
 - All processing happens locally
