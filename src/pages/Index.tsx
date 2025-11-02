@@ -315,13 +315,22 @@ const Index = () => {
         <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-4 max-w-7xl">
           <div className="text-center text-sm text-muted-foreground">
             Built with ❤️ by{' '}
-            <a 
-              href="https://github.com/ajayyai" 
-              target="_blank" 
+            <a
+              href="https://github.com/ajayyai"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-colors"
             >
               @ajayyai
+            </a>
+            {' • '}
+            <a
+              href="https://github.com/ajayyai/tweettr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors"
+            >
+              View on GitHub
             </a>
           </div>
         </div>
