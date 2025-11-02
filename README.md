@@ -1,4 +1,4 @@
-# Catalyst - Viral Tweet Generator
+# Tweettr - Viral Tweet Generator
 
 A minimal, privacy-first viral tweet generator powered by AI using the Vercel AI SDK.
 
@@ -54,11 +54,11 @@ Catalyst uses the **Vercel AI SDK** exclusively for all LLM calls. This provides
 
 All data is stored in browser localStorage:
 
-- `catalyst.apiKey.{provider}` - API keys per provider
-- `catalyst.samples` - Viral tweet samples for few-shot learning
-- `catalyst.history` - Last 50 generations with full details
-- `catalyst.theme` - Current theme (light/dark)
-- `catalyst.lastProvider` - Last selected provider/model
+- `tweettr.apiKey.{provider}` - API keys per provider
+- `tweettr.samples` - Viral tweet samples for few-shot learning
+- `tweettr.history` - Last 50 generations with full details
+- `tweettr.theme` - Current theme (light/dark)
+- `tweettr.lastProvider` - Last selected provider/model
 
 ## Security Notes
 

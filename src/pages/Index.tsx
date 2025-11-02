@@ -163,7 +163,7 @@ const Index = () => {
               <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-sm sm:text-lg font-bold leading-tight">Catalyst Tweet Lab</h1>
+              <h1 className="text-sm sm:text-lg font-bold leading-tight">Tweettr</h1>
               <p className="text-[10px] sm:text-xs text-muted-foreground hidden sm:block">AI-Powered Tweet Generation</p>
             </div>
           </div>

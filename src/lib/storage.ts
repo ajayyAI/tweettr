@@ -1,13 +1,13 @@
 import { Sample, HistoryItem, SavedSystemPrompt } from './types';
 
 const STORAGE_KEYS = {
-  API_KEY: (provider: string) => `catalyst.apiKey.${provider}`,
-  SAMPLES: 'catalyst.samples',
-  HISTORY: 'catalyst.history',
-  SAVED_PROMPTS: 'catalyst.savedSystemPrompts',
-  COLLECTIONS: 'catalyst.collections',
-  THEME: 'catalyst.theme',
-  LAST_PROVIDER: 'catalyst.lastProvider',
+  API_KEY: (provider: string) => `tweettr.apiKey.${provider}`,
+  SAMPLES: 'tweettr.samples',
+  HISTORY: 'tweettr.history',
+  SAVED_PROMPTS: 'tweettr.savedSystemPrompts',
+  COLLECTIONS: 'tweettr.collections',
+  THEME: 'tweettr.theme',
+  LAST_PROVIDER: 'tweettr.lastProvider',
 } as const;
 
 // API Keys
@@ -89,7 +89,7 @@ export const exportHistory = (items?: HistoryItem[]): void => {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `catalyst-history-${new Date().toISOString()}.json`;
+  a.download = `tweettr-history-${new Date().toISOString()}.json`;
   a.click();
   URL.revokeObjectURL(url);
 };
